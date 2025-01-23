@@ -20,7 +20,7 @@ jobs:
       uses: actions/setup-java@v4
       with:
         distribution: 'sapmachine'
-        java-version: 17
+        java-version: 11
     - name: Build
       run: mvn -B -ntp --file pom.xml -DskipTests package
       env:
